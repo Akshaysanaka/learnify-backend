@@ -1,0 +1,4 @@
+- [x] Add onclick to home page course cards to navigate to course-details.html
+- [x] Fix navbar positioning in common.css to prevent logout overlap
+- [x] Increase logout button size in common.css
+- [x] Change some colors to red theme in common.css

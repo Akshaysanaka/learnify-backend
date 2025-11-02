@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnify - Home</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/utils.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/api.js"></script>
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+
+  <!-- Shared Header with Navbar -->
+ <header>
+    <div class="navbar">
+      <div class="logo">Learnify</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="btn-login">Login</a>
+
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="home-section">
+      <div class="container">
+        <h2>Welcome to Learnify</h2>
+        <p>
+          Learnify is your one-stop platform for online education. Explore thousands of expert-led courses in programming, business, design, marketing, and more.
+        </p>
+
+        <div class="home-grid">
+          <div class="card" onclick="window.location.href='course-details.html?title=Browse%20Courses&desc=Explore%20a%20vast%20collection%20of%20courses%20across%20multiple%20categories.&img=https://img.freepik.com/free-vector/online-learning-concept-illustration_114360-2994.jpg'">
+            <h3>Browse Courses</h3>
+            <p>Explore a vast collection of courses across multiple categories.</p>
+          </div>
+          <div class="card" onclick="window.location.href='course-details.html?title=Join%20Live%20Classes&desc=Learn%20in%20real%20time%20with%20expert%20instructors%20and%20interactive%20sessions.&img=https://img.freepik.com/free-vector/live-streaming-concept-illustration_114360-539.jpg'">
+            <h3>Join Live Classes</h3>
+            <p>Learn in real time with expert instructors and interactive sessions.</p>
+          </div>
+          <div class="card" onclick="window.location.href='course-details.html?title=Track%20Your%20Progress&desc=Earn%20certificates%20and%20monitor%20your%20learning%20journey.&img=https://img.freepik.com/free-vector/progress-concept-illustration_114360-489.jpg'">
+            <h3>Track Your Progress</h3>
+            <p>Earn certificates and monitor your learning journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Learnify. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Learnify</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/utils.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/api.js"></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/signup.js" defer></script>
+  <script>
+    // Redirect if already logged in
+    document.addEventListener('DOMContentLoaded', () => {
+      if (isLoggedIn()) {
+        window.location.href = 'home.html';
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Learnify</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="btn-login">Login</a>
+    </div>
+  </header>
+
+  <!-- Signup Form -->
+  <main>
+    <section class="auth-section">
+      <div class="container auth-container">
+        <h2>Create an Account</h2>
+        <form class="auth-form" id="signupForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Create Password</label>
+            <input type="password" id="password" placeholder="Create a password" required />
+          </div>
+          <button type="submit" class="btn-submit">Sign Up</button>
+          <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Learnify. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

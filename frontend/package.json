@@ -1,0 +1,17 @@
+{
+  "name": "learnify-frontend",
+  "version": "1.0.0",
+  "description": "Frontend server for Learnify",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["frontend", "server"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
